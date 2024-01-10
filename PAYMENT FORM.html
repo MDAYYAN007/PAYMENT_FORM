@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>
+            Name: <input type="text" name="name" required>
+        </p>
+        <fieldset> <!-- This is used to create a field or box -->
+            <legend>Gender</legend> <!-- This is used to give a name to the box -->
+                <p>
+                    <label><input type="radio" name="gender" id="male" required>Male</label><!--Label for making the whole word a selectable box-->
+                    <label><input type="radio" name="gender" id="female" required>Female</label>   
+                </p>
+        </fieldset>
+        <p>
+            Address: <textarea name="address" id="address" cols="100" rows="10"></textarea>
+        </p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <p>Pincode: <input type="number" name="number" id="number" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>
+            Card Type:
+            <select name="cardtype" id="cardtype" required>
+                <option value="">--Select your card type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number: <input type="number" name="number" id="number" required>
+        </p>
+        <p>
+            Expiration: <input type="date" name="expdate" id="expdate" required>
+        </p>
+        <p>
+            CVV: <input type="password" name="CVV" id="CVV" required>
+        </p>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
